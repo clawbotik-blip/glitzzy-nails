@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Glitzzy Nails in Freeport, NY: acrylic, hard gel, polygel and long nails, deep pedicures, lashes, waxing, facials and hair. Book online.">
+<meta property="og:title" content="Glitzzy Nails · Freeport, NY">
+<meta property="og:description" content="Long nails. Loud glam. Acrylic, hard gel, polygel, lashes and waxing at 43 W Merrick Rd, Freeport.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230d0a0c'/><text x='50%25' y='70%25' text-anchor='middle' font-family='Georgia' font-style='italic' font-weight='700' font-size='44' fill='%23ec2a84'>G</text></svg>">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NailSalon","name":"Glitzzy Nails","telephone":"+1-516-226-3342","address":{"@type":"PostalAddress","streetAddress":"43 W Merrick Rd","addressLocality":"Freeport","addressRegion":"NY","postalCode":"11520","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":40.6537757,"longitude":-73.5820028},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Thursday"],"opens":"10:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"10:00","closes":"18:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"10:00","closes":"19:00"}],"sameAs":["https://www.instagram.com/glitzzynail/"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.1","reviewCount":"28"}}</script>
+<title>Glitzzy Nails</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500;1,6..96,700&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: dark luxe salon; full-bleed rendered photography, Bodoni italic display, champagne + hot pink accents, 1200px grid */
+:root{
+  --bg:#0d0a0c; --panel:#16111a; --panel-2:#1e1820; --fg:#f5eee7; --muted:#b2a6a9; --line:#2c242a;
+  --pink:#ec2a84; --gold:#d8b46c; --ink:#0d0a0c;
+  --display:"Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px, env(safe-area-inset-left, 0px));padding-right:max(20px, env(safe-area-inset-right, 0px))}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.02;margin:0;text-wrap:balance}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--pink);color:#fff;border:0;border-radius:999px;padding:14px 26px;font:700 15px var(--body);letter-spacing:.02em;text-decoration:none;cursor:pointer;transition:transform .15s, background .15s}
+.btn:hover{transform:translateY(-1px);background:#ff3b93}
+.btn.line{background:transparent;border:1px solid rgba(245,238,231,.45)}
+.btn.line:hover{background:rgba(245,238,231,.08)}
+.btn.sm{padding:10px 18px;font-size:14px}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top, 0px);z-index:10;background:var(--bg)}
+header{position:sticky;top:env(safe-area-inset-top, 0px);z-index:9;background:rgba(13,10,12,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.logo{display:flex;align-items:baseline;gap:8px;text-decoration:none}
+.logo b{font-family:var(--display);font-style:italic;font-weight:700;font-size:28px;letter-spacing:-.01em}
+.logo span{font-size:11px;font-weight:700;letter-spacing:.3em;color:var(--gold)}
+.links{display:flex;gap:28px;font-size:14px;font-weight:600}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--fg)}
+@media (max-width:860px){.links{display:none}}
+
+/* hero */
+.hero{position:relative;background:#120d11 url(img/hero.jpg) 70% 60%/cover no-repeat;border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,10,12,.96) 0%,rgba(13,10,12,.82) 38%,rgba(13,10,12,.1) 70%)}
+.hero .wrap{position:relative;padding-block:120px 110px}
+.hero h1{font-size:clamp(54px,8.5vw,118px);max-width:9ch;margin:18px 0 22px}
+.hero h1 i{color:var(--pink)}
+.hero p{max-width:40ch;color:var(--muted);font-size:18px;margin:0 0 32px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.rating{display:inline-flex;align-items:center;gap:10px;margin-top:36px;font-size:14px;color:var(--muted)}
+.rating b{color:var(--fg);font-size:15px}
+.stars{color:var(--gold);letter-spacing:2px}
+@media (max-width:760px){.hero{background-position:62% 100%;background-size:180% auto}.hero::before{background:linear-gradient(180deg,rgba(13,10,12,.97) 0%,rgba(13,10,12,.88) 55%,rgba(13,10,12,.35) 100%)}.hero .wrap{padding-block:64px 220px}}
+
+/* ticker */
+.ticker{overflow:hidden;border-bottom:1px solid var(--line);background:var(--panel)}
+.ticker div{display:flex;gap:40px;padding-block:16px;white-space:nowrap;width:max-content;animation:roll 40s linear infinite;font-family:var(--display);font-style:italic;font-size:22px}
+.ticker span{color:var(--gold);font-style:normal}
+@keyframes roll{to{transform:translateX(-50%)}}
+
+section{padding-block:96px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.head h2{font-size:clamp(40px,5.5vw,68px)}
+.head h2 i{color:var(--pink)}
+.head p{max-width:42ch;color:var(--muted);margin:0}
+
+/* service cards */
+.grid{display:grid;gap:20px}
+.nails{grid-template-columns:repeat(4,1fr)}
+.beauty{grid-template-columns:repeat(3,1fr)}
+@media (max-width:1080px){.nails{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:900px){.beauty{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.nails,.beauty{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card .ph{aspect-ratio:4/5;max-width:100%;overflow:hidden;background:var(--panel-2)}
+.beauty .card .ph{aspect-ratio:4/3}
+.card .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.card:hover .ph img{transform:scale(1.04)}
+.card .bd{padding:22px 22px 24px;display:flex;flex-direction:column;gap:14px;flex:1}
+.card h3{font-size:30px}
+.card .count{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.list{list-style:none;margin:0;padding:0;display:grid}
+.list li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-block:9px;border-bottom:1px dashed var(--line);font-size:15px}
+.list li span:first-child{min-width:0}
+.list li .p{font-weight:700;color:var(--gold);white-space:nowrap;font-variant-numeric:tabular-nums}
+.list li.more{display:none}
+.card.open .list li.more{display:flex}
+.card .foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:6px}
+.toggle{background:none;border:0;color:var(--muted);font:600 14px var(--body);cursor:pointer;padding:0;text-decoration:underline;text-underline-offset:3px}
+.toggle:hover{color:var(--fg)}
+.note{font-size:13px;color:var(--muted);margin-top:22px}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal img{width:100%;aspect-ratio:1;max-width:100%;object-fit:cover;border-radius:16px;display:block}
+.gal .big{grid-column:span 2;grid-row:span 2}
+.gal .big img{aspect-ratio:auto;height:100%}
+.ig{border-radius:16px;background:var(--pink);display:flex;flex-direction:column;justify-content:space-between;padding:22px;text-decoration:none;aspect-ratio:1;max-width:100%}
+.ig b{font-family:var(--display);font-style:italic;font-size:30px;line-height:1.05}
+.ig span{font-size:14px;font-weight:600}
+@media (max-width:760px){.gal{grid-template-columns:repeat(2,1fr)}}
+
+/* reviews */
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:18px;min-width:0}
+.rev .stars{font-size:15px}
+.rev q{font-family:var(--display);font-size:22px;line-height:1.35;quotes:"\201C" "\201D"}
+.rev small{margin-top:auto;color:var(--muted);font-size:13px;font-weight:600;letter-spacing:.06em}
+@media (max-width:900px){.revs{grid-template-columns:1fr}}
+
+/* booking */
+.book{background:var(--panel);border-block:1px solid var(--line)}
+.book-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.book h2{font-size:clamp(40px,5.5vw,68px);margin:14px 0 18px}
+.book h2 i{color:var(--pink)}
+.book p{color:var(--muted);max-width:40ch;margin:0}
+.opts{display:grid;gap:12px}
+.opt{display:flex;justify-content:space-between;align-items:center;gap:16px;background:var(--panel-2);border:1px solid var(--line);border-radius:18px;padding:22px 24px;text-decoration:none}
+.opt b{display:block;font-family:var(--display);font-size:26px;font-weight:500}
+.opt small{color:var(--muted);font-size:14px}
+.opt.primary{background:var(--pink);border-color:var(--pink)}
+.opt.primary small{color:#ffe2ef}
+.arrow{font-size:22px}
+.copy{background:none;border:1px solid var(--line);color:var(--fg);font:600 13px var(--body);cursor:pointer;padding:8px 14px;border-radius:999px;white-space:nowrap}
+.copy:hover{border-color:var(--gold)}
+@media (max-width:860px){.book-grid{grid-template-columns:1fr;gap:32px}}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px}
+.visit h3{font-size:30px;margin-bottom:18px}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.hours tr.today td{color:var(--gold);font-weight:700}
+.kv{display:grid;gap:18px}
+.kv .k{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.map{display:flex;align-items:flex-end;aspect-ratio:1;max-width:100%;border-radius:22px;padding:18px;text-decoration:none;border:1px solid var(--line);position:relative;overflow:hidden;
+  background:linear-gradient(var(--line) 1px,transparent 1px) 0 0/34px 34px,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/34px 34px,var(--panel)}
+.map::before{content:"";position:absolute;left:-10%;right:-10%;top:48%;height:14px;background:var(--panel-2);transform:rotate(-8deg);border-block:1px solid #3a3037}
+.map::after{content:"";position:absolute;left:52%;top:38%;width:26px;height:26px;background:var(--pink);border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 0 0 8px rgba(236,42,132,.2)}
+.map span{position:relative;background:var(--fg);color:var(--ink);border-radius:999px;padding:9px 16px;font-size:14px;font-weight:700}
+@media (max-width:960px){.visit{grid-template-columns:1fr}.map{aspect-ratio:16/9}}
+
+footer{border-top:1px solid var(--line);padding-block:34px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+footer .rent{color:var(--fg)}
+footer .rent b{color:var(--gold)}
+</style>
+<style>html{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><b>Glitzzy</b><span>NAILS</span></a>
+    <nav class="links" aria-label="Main">
+      <a href="#nails">Nails</a><a href="#beauty">Beauty</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a>
+    </nav>
+    <a class="btn sm" data-book href="#" target="_blank" rel="noopener">Book now</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Freeport · Long Island</div>
+      <h1>Long nails. <i>Loud</i> glam.</h1>
+      <p>Acrylic, hard gel and polygel sets, deep pedicures, lashes, waxing and hair. By appointment on West Merrick Road.</p>
+      <div class="actions">
+        <a class="btn" data-book href="#" target="_blank" rel="noopener">Book your set</a>
+        <a class="btn line" href="#nails">See the menu</a>
+      </div>
+      <div class="rating"><span class="stars" aria-hidden="true">★★★★☆</span><b>4.1</b> from 28 Google reviews</div>
+    </div>
+  </div>
+
+  <div class="ticker" aria-hidden="true"><div id="ticker"></div></div>
+
+  <section id="nails">
+    <div class="wrap">
+      <div class="head">
+        <h2>The <i>nail</i> menu</h2>
+        <p>From a quick polish change to XL acrylic. Ranges depend on length, shape and design.</p>
+      </div>
+      <div class="grid nails" id="nailGrid"></div>
+    </div>
+  </section>
+
+  <section id="beauty" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <h2>Lashes, wax <i>&amp;</i> more</h2>
+        <p>Finish the look in the same visit: brows, lashes, waxing, facials, hair and extensions.</p>
+      </div>
+      <div class="grid beauty" id="beautyGrid"></div>
+      <p class="note">Prices from the salon's Clover menu. Variable services are confirmed at your appointment.</p>
+    </div>
+  </section>
+
+  <section id="gallery" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <h2>Fresh <i>sets</i></h2>
+        <p>Coffin, almond, stiletto and square, in chrome, glitter, ombré and French.</p>
+      </div>
+      <div class="gal">
+        <img class="big" src="img/nails-art.jpg" alt="Glitter and rhinestone almond nails">
+        <img src="img/g1.jpg" alt="Hot pink chrome coffin nails">
+        <img src="img/g2.jpg" alt="Nude almond French tips">
+        <img src="img/g3.jpg" alt="Black and gold chrome stiletto nails">
+        <img src="img/g4.jpg" alt="Lavender ombré coffin nails">
+        <img src="img/g5.jpg" alt="Merlot almond nails">
+        <img src="img/g6.jpg" alt="Sky blue glitter square nails">
+        <img src="img/g7.jpg" alt="Nude almond nails with rhinestones">
+        <img src="img/g8.jpg" alt="Pink glitter coffin nails">
+        <img src="img/nails-acrylic.jpg" alt="Long stiletto acrylic set">
+        <a class="ig" href="https://www.instagram.com/glitzzynail/" target="_blank" rel="noopener"><b>More on Instagram</b><span>@glitzzynail · 1.8K followers ↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <h2>Clients <i>say</i></h2>
+        <p>4.1 stars from 28 reviews on Google.</p>
+      </div>
+      <div class="revs">
+        <figure class="rev" style="margin:0"><q>Roselle did my nails and absolutely nailed it, beautiful work. Jennifer did my toes, perfect and polished!</q><small>GOOGLE REVIEW</small></figure>
+        <figure class="rev" style="margin:0"><q>Coming here for almost 10 years and they never disappoint. Always clean, friendly, and my nails come out perfect.</q><small>GOOGLE REVIEW</small></figure>
+        <figure class="rev" style="margin:0"><q>Jenny is the best! My nails last at least 6 weeks and never break. She'll do any design you want.</q><small>GOOGLE REVIEW</small></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="book">
+    <div class="wrap book-grid">
+      <div>
+        <div class="eyebrow">Appointment only</div>
+        <h2>Save your <i>seat</i>.</h2>
+        <p>Book online in a minute, or send us your inspo on WhatsApp and we'll set the time.</p>
+      </div>
+      <div class="opts">
+        <a class="opt primary" data-book href="#" target="_blank" rel="noopener"><div><b>Book online</b><small>Pick a service and an open time</small></div><span class="arrow">↗</span></a>
+        <div class="opt"><div><b>WhatsApp</b><small id="wa">978-818-4184</small></div><button class="copy" type="button" data-copy="wa">Copy</button></div>
+        <div class="opt"><div><b>Call the salon</b><small id="ph">(516) 226-3342</small></div><button class="copy" type="button" data-copy="ph">Copy</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap visit">
+      <div>
+        <h3>Hours</h3>
+        <table class="hours"><tbody id="hours"></tbody></table>
+      </div>
+      <div class="kv">
+        <h3 style="margin:0">Find us</h3>
+        <div><div class="k">Address</div>43 W Merrick Rd<br>Freeport, NY 11520</div>
+        <div><div class="k">Phone</div>(516) 226-3342</div>
+        <div><div class="k">Instagram</div><a href="https://www.instagram.com/glitzzynail/" target="_blank" rel="noopener">@glitzzynail</a></div>
+      </div>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=43+W+Merrick+Rd+Freeport+NY+11520" target="_blank" rel="noopener"><span>Get directions ↗</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Glitzzy Nails · Freeport, New York</span>
+    <span class="rent">Nail techs: booth rental available, <b>$125–$150 / week</b></span>
+  </div>
+</footer>
+
+<script>
+const BOOKING_URL = "https://beacons.ai/glitzzynails"; // swap for the Clover booking link
+const NAILS = [{"name": "Manicure", "img": "nails-manicure.jpg", "alt": "Classic red oval manicure", "items": [["Classic Manicure", "$25"], ["Spa Manicure", "$40"], ["Polish Change (Hands)", "$15"], ["Gel Polish Change (Hands)", "$30"]]}, {"name": "Gel & polygel", "img": "nails-gel.jpg", "alt": "Pink ombré gel almond nails", "items": [["Gel Manicure", "$70–$120"], ["Polygel & Hard Gel", "$70–$130"], ["Full Set Gel Nails", "$70"], ["Gel Fill", "$60"]]}, {"name": "Acrylic & art", "img": "nails-acrylic.jpg", "alt": "Long stiletto acrylic nails in gold chrome and black", "items": [["Full Set Acrylic Nails", "$65–$130"], ["Acrylic Fill", "$50"], ["Acrylic Removal", "$15"], ["Nail Art", "$10–$30"]]}, {"name": "Pedicure", "img": "nails-pedicure.jpg", "alt": "Coral gel pedicure", "items": [["Classic Pedicure", "$40"], ["Spa Pedicure", "$60"], ["Gel Pedicure", "$60"], ["Gel Polish Change (Feet)", "$40"], ["Polish Change (Feet)", "$20"]]}];
+const BEAUTY = [{"name": "Brows & lashes", "img": "lashes.jpg", "alt": "Lash extension strips", "items": [["Eyebrow Waxing", "$30"], ["Eyebrow Shaping/Tweezing", "$40"], ["Eyebrow Tinting", "$50"], ["Eyelash Tinting", "$60"], ["Classic Lash Extensions", "$100–$250"], ["Hybrid Lash Extensions", "$120–$300"], ["Volume Lash Extensions", "$150–$600"], ["Lash Fill", "$50–$150"]]}, {"name": "Face waxing", "img": "wax-face.jpg", "alt": "Pot of warm honey wax with spatula", "items": [["Upper Lip Wax", "$20"], ["Chin Wax", "$25"], ["Cheeks Wax", "$30"], ["Full Face Wax", "$75"]]}, {"name": "Body waxing", "img": "wax-body.jpg", "alt": "Pink hard wax beads", "items": [["Underarms Wax", "$40"], ["Half Arms Wax", "$50"], ["Full Arms Wax", "$75"], ["Half Legs Wax", "$70"], ["Full Legs Wax", "$120"], ["Bikini Wax", "$70"], ["Brazilian Wax", "$120"], ["Stomach Wax", "$60"], ["Back Wax", "$100"], ["Chest Wax", "$90"]]}, {"name": "Facials & makeup", "img": "facials.jpg", "alt": "Serum bottle and face cream jar", "items": [["Basic Facial", "$120"], ["Deep Cleansing Facial", "$200"], ["Anti-Aging Facial", "$250"], ["Acne Treatment Facial", "$220"], ["Hydrating Facial", "$170"], ["Facial Massage", "$80"], ["Makeup Application", "$150"], ["Bridal Makeup", "$200–$1,000"]]}, {"name": "Hair & color", "img": "hair.jpg", "alt": "Brunette to caramel balayage hair", "items": [["Women's Haircut", "$65"], ["Men's Haircut", "$40"], ["Children's Haircut", "$35"], ["Shampoo & Blow Dry", "$50"], ["Blowout (Long/Thick Hair)", "$85"], ["Special Event Styling", "$85–$250"], ["Root Touch-Up", "$85–$120"], ["Single Process Color", "$120"], ["Partial Highlights", "$180"], ["Full Highlights", "$250"], ["Balayage/Ombre", "$250–$800"], ["Minor Color Correction", "$100–$250"], ["Moderate Color Correction", "$250–$500"], ["Major Color Correction", "$500–$2,000"], ["Platinum Blonde / Multi-Session Correction", "$800–$3,000"], ["Keratin Treatment", "$300–$500"], ["Relaxer", "$120"], ["Perm", "$130"], ["Deep Conditioning Treatment", "$35"], ["Hair Mask/Treatment", "$45"]]}, {"name": "Extensions", "img": "extensions.jpg", "alt": "Long blonde hair extensions", "items": [["Extension Consultation", "Free"], ["Tape-In Extensions", "$350–$1,500"], ["Microlink/I-Tip Extensions", "$500–$2,500"], ["Extension Removal", "$250–$600"], ["Fusion (Keratin Bond) Extensions", "$800–$3,500"], ["Sew-In Extensions", "$300–$1,000"], ["Extension Maintenance", "$100–$500"]]}];
+const SHOW = 4;
+
+function card(c){
+  const rows = c.items.map(([n,p],i)=>`<li class="${i>=SHOW?'more':''}"><span>${n}</span><span class="p">${p}</span></li>`).join('');
+  const extra = c.items.length - SHOW;
+  return `<article class="card">
+    <div class="ph"><img src="img/${c.img}" alt="${c.alt}"></div>
+    <div class="bd">
+      <div><div class="count">${c.items.length} service${c.items.length>1?'s':''}</div><h3>${c.name}</h3></div>
+      <ul class="list">${rows}</ul>
+      <div class="foot">${extra>0?`<button class="toggle" type="button">Show all ${c.items.length}</button>`:'<span></span>'}<a class="btn sm" data-book href="#" target="_blank" rel="noopener">Book</a></div>
+    </div></article>`;
+}
+document.getElementById('nailGrid').innerHTML = NAILS.map(card).join('');
+document.getElementById('beautyGrid').innerHTML = BEAUTY.map(card).join('');
+document.querySelectorAll('.toggle').forEach(b=>b.addEventListener('click',()=>{
+  const c=b.closest('.card'); const open=c.classList.toggle('open');
+  b.textContent = open ? 'Show less' : `Show all ${c.querySelectorAll('.list li').length}`;
+}));
+document.querySelectorAll('[data-book]').forEach(a=>a.href=BOOKING_URL);
+
+const words=["Acrylic","Hard gel","Polygel","Long nails","Deep pedicure","Chrome","Lash extensions","Brazilian wax","Facials","Balayage"];
+const line=words.map(w=>`${w} <span>✦</span>`).join(' ');
+document.getElementById('ticker').innerHTML=line+' '+line;
+
+const hours=[["Monday","10:00 AM – 6:00 PM"],["Tuesday","10:00 AM – 6:00 PM"],["Wednesday","10:00 AM – 6:30 PM"],["Thursday","10:00 AM – 6:00 PM"],["Friday","10:00 AM – 7:00 PM"],["Saturday","10:00 AM – 7:00 PM"],["Sunday","Closed"]];
+const today=(new Date().getDay()+6)%7;
+document.getElementById('hours').innerHTML=hours.map(([d,h],i)=>`<tr class="${i===today?'today':''}"><td>${d}</td><td>${h}</td></tr>`).join('');
+
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',async()=>{
+  const el=document.getElementById(b.dataset.copy);
+  try{await navigator.clipboard.writeText(el.textContent);b.textContent='Copied';}
+  catch(e){const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected';}
+  setTimeout(()=>b.textContent='Copy',1600);
+}));
+</script>
+
+</body>
+</html>
