@@ -11,7 +11,7 @@
 <meta property="og:image" content="https://glitzzynails.us/img/hero.jpg">
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"NailSalon","name":"Glitzzy Nails","telephone":"+1-516-226-3342","address":{"@type":"PostalAddress","streetAddress":"43 W Merrick Rd","addressLocality":"Freeport","addressRegion":"NY","postalCode":"11520","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":40.6537757,"longitude":-73.5820028},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Thursday"],"opens":"10:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"10:00","closes":"18:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"10:00","closes":"19:00"}],"sameAs":["https://www.instagram.com/glitzzynail/"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.1","reviewCount":"28"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NailSalon","name":"Glitzzy Nails","telephone":"+1-516-226-3342","address":{"@type":"PostalAddress","streetAddress":"43 W Merrick Rd","addressLocality":"Freeport","addressRegion":"NY","postalCode":"11520","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":40.6537757,"longitude":-73.5820028},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Thursday"],"opens":"10:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"10:00","closes":"18:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"10:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"10:00","closes":"18:00"}],"sameAs":["https://www.instagram.com/glitzzynail/"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.1","reviewCount":"28"}}</script>
 <title>Glitzzy Nails</title>
 <link rel="preload" as="image" href="img/hero.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -282,7 +282,7 @@ footer .rent b{color:var(--gold-ink)}
     <div class="wrap visit">
       <div>
         <h3>Hours</h3>
-        <table class="hours"><tbody id="hours"><tr><td>Monday</td><td>10:00 AM – 6:00 PM</td></tr><tr><td>Tuesday</td><td>10:00 AM – 6:00 PM</td></tr><tr><td>Wednesday</td><td>10:00 AM – 6:30 PM</td></tr><tr><td>Thursday</td><td>10:00 AM – 6:00 PM</td></tr><tr><td>Friday</td><td>10:00 AM – 7:00 PM</td></tr><tr><td>Saturday</td><td>10:00 AM – 7:00 PM</td></tr><tr><td>Sunday</td><td>Closed</td></tr></tbody></table>
+        <table class="hours"><tbody id="hours"><tr><td>Monday</td><td>10:00 AM – 6:00 PM</td></tr><tr><td>Tuesday</td><td>10:00 AM – 6:00 PM</td></tr><tr><td>Wednesday</td><td>10:00 AM – 6:30 PM</td></tr><tr><td>Thursday</td><td>10:00 AM – 6:00 PM</td></tr><tr><td>Friday</td><td>10:00 AM – 7:00 PM</td></tr><tr><td>Saturday</td><td>10:00 AM – 7:00 PM</td></tr><tr><td>Sunday</td><td>10:00 AM – 6:00 PM</td></tr></tbody></table>
       </div>
       <div class="kv">
         <h3 style="margin:0">Find us</h3>
@@ -315,7 +315,7 @@ const words=["Acrylic","Hard gel","Polygel","Long nails","Deep pedicure","Chrome
 const line=words.map(w=>`${w} <span>✦</span>`).join(' ');
 document.getElementById('ticker').innerHTML=line+' '+line;
 
-const hours=[["Monday","10:00 AM – 6:00 PM"],["Tuesday","10:00 AM – 6:00 PM"],["Wednesday","10:00 AM – 6:30 PM"],["Thursday","10:00 AM – 6:00 PM"],["Friday","10:00 AM – 7:00 PM"],["Saturday","10:00 AM – 7:00 PM"],["Sunday","Closed"]];
+const hours=[["Monday","10:00 AM – 6:00 PM"],["Tuesday","10:00 AM – 6:00 PM"],["Wednesday","10:00 AM – 6:30 PM"],["Thursday","10:00 AM – 6:00 PM"],["Friday","10:00 AM – 7:00 PM"],["Saturday","10:00 AM – 7:00 PM"],["Sunday","10:00 AM – 6:00 PM"]];
 const today=(new Date().getDay()+6)%7;
 document.querySelectorAll('#hours tr')[today]?.classList.add('today');
 
